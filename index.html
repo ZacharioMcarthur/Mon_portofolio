@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portofolio.css">
+    <meta name="description" content="Portfolio de Zachario NASCIMENTO, développeur Full Stack passionné par le web, le mobile et l'innovation.">
+    <link rel="stylesheet" href="portfolio.css">
     <link rel="icon" type="image/png" href='img/icon.png'>
     <!-- Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <title>mon portofolio</title>
+    <title>Mon portfolio</title>
 </head>
 
 <body>
@@ -16,30 +16,31 @@
         <img src="img/2.jpg" class="slider-background">
         <div class="slider-content">
             <h1>Zachario NASCIMENTO</h1>
-            <p>Je suis developpeur full-stark</p>
+            <p>Je suis developpeur Full Stark</p>
         </div>
     </div>
     <div class="section">
-        <div class="section-content">
-            <div class="flex">
-                <div class="w40">
-                    <h2>À propos de moi</h2>
-                </div>
-                <div class="w60">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum ducimus veniam aperiam repellat
-                        doloribus commodi quibusdam laborum incidunt maiores, explicabo culpa hic ut consequatur
-                        perspiciatis labore dolores placeat dolore harum quo magnam? Voluptatem obcaecati culpa deleniti
-                        accusamus eaque blanditiis reiciendis. Perferendis corporis nulla ipsum velit veritatis
-                        blanditiis sunt natus recusandae quasi ipsa commodi amet, culpa odio, fuga, vel enim debitis!
-                        Quibusdam tempora, facilis aspernatur iste maxime dicta doloribus expedita numquam commodi,
-                        autem provident. Molestiae deserunt, eligendi, qui provident, impedit iste voluptatem et
-                        necessitatibus laboriosam modi consectetur! Blanditiis, dolorem quis. Nihil fuga molestiae
-                        maxime rem, et numquam illo soluta similique saepe.
-                    </p>
+    <div class="section-content">
+        <div class="flex">
+            <div class="w40">
+                <h2>À propos de moi</h2>
+            </div>
+            <div class="w60">
+                <div class="about-card" onclick="toggleAboutDetails()">
+                    <div class="about-header">
+                        <h3>Zachario NASCIMENTO</h3>
+                        <p>Développeur Full Stack & Étudiant en Informatique</p>
+                    </div>
+                    <div class="about-details" id="aboutDetails">
+                        <p>Je suis passionné par la technologie, le développement web & mobile. Étudiant en 2e année de Licence en Informatique de Gestion à l'ENEAM, je maîtrise HTML, CSS, JavaScript, PHP, Flutter, et plus encore. Curieux, persévérant et ouvert à la nouveauté, je suis en quête constante de nouveaux défis.</p>
+                        <p>Langues : Français, Anglais, Fon (moyen), Mina (moyen)</p>
+                        <p>Centres d’intérêt : Programmation, Basket, Mangas japonais, Culture japonaise, Apprentissage du japonais.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <div class="section dark">
         <div class="section-content text-center">
             <h2>Découvrez mes compétences</h2>
@@ -63,9 +64,61 @@
             </div>
         </div>
     </div>
+
     <div class="section">
+    <div class="section-content text-center">
+        <h2>Mes services</h2>
+        <div class="flex gap20 wrap space-between">
+            <div class="w32 service-box">
+                <i class="fas fa-code fa-2x"></i>
+                <h3>Développement Web</h3>
+                <p>Création de sites web modernes, responsives et performants.</p>
+            </div>
+            <div class="w32 service-box">
+                <i class="fas fa-mobile-alt fa-2x"></i>
+                <h3>Applications mobiles</h3>
+                <p>Développement d'applications multiplateformes avec Flutter.</p>
+            </div>
+            <div class="w32 service-box">
+                <i class="fas fa-database fa-2x"></i>
+                <h3>Base de données</h3>
+                <p>Modélisation, gestion et sécurisation des bases de données.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section dark">
+    <div class="section-content">
+        <h2 class="text-center">Expériences professionnelles</h2>
+        <div class="flex gap20 wrap">
+            <div class="w60 experience">
+                <h3>Développeur Web - Freelance</h3>
+                <p>2024 - Aujourd’hui</p>
+                <br>
+                <p>Conception de sites e-commerce, vitrines et applications métiers.</p>
+            </div>
+            <div class="w60 experience">
+                <h3>Stage - Hôtel Le Refuge</h3>
+                <p>2025 - 3 mois</p>
+                <br>
+                <p>Participation au développement d’une plateforme de réservation.</p>
+            </div>
+            <div class="w60 experience">
+                <h3>Formation en programmation Web et mobile</h3>
+                <p>2024 - 3 mois</p>
+                <br>
+                <p>- Appronfondissement des connaissances en algorithmique.</p>
+                <br>
+                <p>- Approfondissement des capacités  en programmation Web et apprentissage du développement mobile.</p>
+                <br>
+                <p>- Apprentissage du SGBD MySQL</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
         <div class="section-content">
-            <h2 class="text-center">Mes réalisations</h2>
+            <h2 class="text-center">Mes projets</h2>
             <div class="flex wrap gap20 space-between">
                 <div class="w32 realisation">
                     <a href="">
@@ -94,7 +147,7 @@
                 <div class="w32 realisation">
                     <a href="">
                         <img src="img/library.jpg" alt="image-hotel">
-                        <h3>Application avec flutter pour les prêt de livre en library</h3>
+                        <h3>Application Flutter pour le prêt de livres en bibliothèque</h3>
                     </a>
                 </div>
                 <div class="w32 realisation">
@@ -108,20 +161,50 @@
         </div>
     </div>
     <div class="section dark">
-        <div class="section-content text-center">
-            <h2>Contactez-moi</h2>
-            <div class="flex space-between">
-                <div class="w32">
-                <i class="fas fa-envelope mr-3"></i>
-                    <span>E-mail: </span>
-                    <a href="mailto:" class="e-mail">nascimentozachario@gmail.com</a>
-                    <span></span>
-                </div>
+    <div class="section-content text-center">
+        <h2> Pourquoi me choisir ?</h2>
+        <div class="flex gap20 wrap space-between">
+            <div class="w25 why-box">
+                <i class="fas fa-rocket fa-2x"></i>
+                <h3>Rapide</h3>
+                <p>Des délais courts pour des projets de qualité.</p>
+            </div>
+            <div class="w25 why-box">
+                <i class="fas fa-thumbs-up fa-2x"></i>
+                <h3>Fiable</h3>
+                <p>Un code propre, documenté et sécurisé.</p>
+            </div>
+            <div class="w25 why-box">
+                <i class="fas fa-user-check fa-2x"></i>
+                <h3>À l’écoute</h3>
+                <p>Je vous accompagne à chaque étape du projet.</p>
             </div>
         </div>
     </div>
+</div>
+
+<div class="section">
+    <div class="section-content text-center">
+        <h2>Témoignages</h2>
+        <div class="flex gap20 wrap space-between">
+            <div class="w32 testimonial">
+                <p>"Professionnel, à l'écoute et très rapide. Mon site est exactement ce que je voulais !"</p>
+                <strong>— Client A</strong>
+            </div>
+            <div class="w32 testimonial">
+                <p>"Une collaboration fluide du début à la fin. Je recommande vivement."</p>
+                <strong>— Client B</strong>
+            </div>
+            <div class="w32 testimonial">
+                <p>"Il a su comprendre mes besoins et livrer un travail de qualité."</p>
+                <strong>— Client C</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 
-<script src="js/portofolio.js"></script>
+<script src="js/portfolio.js"></script>
 
 </html>
