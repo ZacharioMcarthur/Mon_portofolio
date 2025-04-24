@@ -171,10 +171,17 @@ p{
 .testimonial p {
     font-style: italic;
 }
-
+/* une petite animation avec lorsqu'on survole*/
 .why-box p {
     font-size: 1rem;
 }
+.service-box, .why-box, .realisation, .testimonial {
+    transition: transform 0.3s ease;
+}
+.service-box:hover, .why-box:hover, .realisation:hover, .testimonial:hover {
+    transform: translateY(-5px);
+}
+/**/
 .about-card {
     background: #f0f0f0;
     padding: 25px;
